@@ -1,0 +1,153 @@
+:root {
+  --qq-bg: #f6f8fc;
+  --qq-card: #ffffff;
+  --qq-ink: #172033;
+  --qq-muted: #627086;
+  --qq-brand: #0d6efd;
+  --qq-border: #dce3ee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--qq-ink);
+  background: radial-gradient(circle at top, #eef4ff 0%, var(--qq-bg) 42%, #edf1f7 100%);
+}
+
+.navbar-brand {
+  letter-spacing: 0.02em;
+}
+
+.card {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 1rem;
+}
+
+.quote-preview-card {
+  position: sticky;
+  top: 5.5rem;
+}
+
+.table > :not(caption) > * > * {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.table thead th {
+  font-size: 0.875rem;
+  color: var(--qq-muted);
+  font-weight: 600;
+}
+
+.table tbody td {
+  vertical-align: middle;
+}
+
+.item-total,
+#subtotal,
+#discount-value,
+#tax-value,
+#deposit-value,
+#grand-total,
+#balance-due {
+  font-variant-numeric: tabular-nums;
+}
+
+.item-total {
+  min-width: 80px;
+}
+
+.remove-item-btn {
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  line-height: 1;
+}
+
+.quote-notes-text {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.text-secondary {
+  color: var(--qq-muted) !important;
+}
+
+.alert-info {
+  border-color: rgba(13, 110, 253, 0.12);
+}
+
+#save-status {
+  transition: color 0.2s ease;
+}
+
+.is-saving {
+  color: var(--qq-brand);
+}
+
+.is-error {
+  color: #c0392b;
+}
+
+@media print {
+  @page {
+    margin: 14mm;
+  }
+
+  body {
+    color: #111 !important;
+    background: #fff !important;
+    font-size: 11pt;
+  }
+
+  .navbar,
+  .quote-editor,
+  .quote-preview-disclaimer,
+  #load-sample-btn,
+  #save-draft-btn,
+  #print-btn,
+  .remove-item-btn,
+  #add-item-btn {
+    display: none !important;
+  }
+
+  .quote-preview-card {
+    position: static;
+    top: auto;
+    width: 100%;
+    border: 0;
+    box-shadow: none !important;
+  }
+
+  .quote-preview-card .card-body {
+    padding: 0 !important;
+  }
+
+  .card,
+  .table,
+  .table-responsive {
+    box-shadow: none !important;
+  }
+
+  .row {
+    display: block !important;
+  }
+
+  .col-12,
+  .col-md-4,
+  .col-md-6,
+  .col-xl-5,
+  .col-xl-7 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .quote-notes,
+  .table,
+  .border-top {
+    break-inside: avoid;
+  }
+}
