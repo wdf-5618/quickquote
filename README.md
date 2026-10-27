@@ -2,7 +2,7 @@
 
 QuickQuote is a small quotation and estimate builder for freelancers and small service businesses. It is a front-end learning project built with HTML, CSS, Bootstrap 5, and vanilla JavaScript.
 
-**Live demo:** [Open QuickQuote](https://quickquote-wdf-5618s-projects.vercel.app)  
+**Live demo:** [Open QuickQuote](https://quickquote-chi.vercel.app)  
 **Source code:** [wdf-5618/quickquote](https://github.com/wdf-5618/quickquote)
 
 ## Features
